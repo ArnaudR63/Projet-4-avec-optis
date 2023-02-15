@@ -7,6 +7,41 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+#annuaire {
+    display: flex;
+    flex-direction: column;
+    background-color: #00000050;
+    padding: 20px;
+    width:100vw;
+    text-align: center;
+}
+#annuaire>.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+#annuaire>.column {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#annuaire ul {
+    list-style-type: none;
+}
+ 
+#annuaire-btn>.bold.bgc-white {
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#annuaire-btn {
+    display: flex;
+    justify-content: center;
+    margin-top:15px;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -340,6 +375,7 @@ a:hover {
 #menu-contact{
     background: #F3976C;
     border-radius: 40px;
+    color:#000000;
 }
 
 .navbar-toggle {
@@ -698,12 +734,15 @@ p {
     margin-right: auto;
 }
 
-.bold {
-    font-weight: 600;
+.avis {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: "Helvetica-Light";
 }
-
-.italic {
-    font-style: italic;
+.avis.italic {
+    font-weight: 500;
+    font-family: "Helvetica-Oblique";
+    max-width: 33vw;
 }
 
 .tight-width-whitespace {
@@ -811,12 +850,12 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .ltc-white {
@@ -1070,4 +1109,17 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+@font-face {
+    font-family: "Helvetica-Light";
+    src: url('../fonts/helvetica-ultra-light.otf');
+} 
+@font-face {
+    font-family: "Helvetica-Oblique";
+    src: url('../fonts/Helvetica-Oblique.ttf');
+} 
+@font-face {
+    font-family: Helvetica;
+    src: url('../fonts/Helvetica.ttf');
 }
