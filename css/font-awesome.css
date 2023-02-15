@@ -40,3 +40,11 @@
 .fa-dribbble:before {
     content: "\f17d"
 }
+
+.fa-chevron-left:before {
+    content: "\f053"
+}
+
+.fa-chevron-right:before {
+    content: "\f054"
+}
